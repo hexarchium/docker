@@ -1,7 +1,5 @@
 # Docker PHP environment
 
-![screen](http://q.i-systems.pl/file/9dfcc6f8.png)
-
 ### Description
 
 Containers set for comprehensive php application runtime environment. It consists of:
