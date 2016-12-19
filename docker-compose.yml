@@ -1,0 +1,16 @@
+www:
+   image: webdevops/php-apache:alpine-3-php7
+   volumes:
+     - ./www:/app
+   ports:
+     - 8080:80
+   links:
+    - db
+db:
+  image: sameersbn/mysql
+  volumes:
+   - /var/lib/mysql
+  environment:
+   - DB_NAME=hexarchium
+   - DB_USER=root
+   - DB_PASS=root
